@@ -347,7 +347,6 @@ button,
 input:where([type='button']),
 input:where([type='reset']),
 input:where([type='submit']) {
-  -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
   /* 2 */
@@ -394,7 +393,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 */
 
 [type='search'] {
-  -webkit-appearance: textfield;
+
   /* 1 */
   outline-offset: -2px;
   /* 2 */
@@ -414,7 +413,7 @@ Remove the inner padding in Chrome and Safari on macOS.
 */
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
+
   /* 1 */
   font: inherit;
   /* 2 */
@@ -533,9 +532,7 @@ iframe,
 embed,
 object {
   display: block;
-  /* 1 */
-  vertical-align: middle;
-  /* 2 */
+
 }
 
 /*
@@ -1112,16 +1109,16 @@ nav ul li>a:hover {
   width: 100%;
 }
 
+.max-w-\[1170px\] {
+  max-width: 1170px;
+}
+
 .max-w-\[170px\] {
   max-width: 170px;
 }
 
 .max-w-\[753px\] {
   max-width: 753px;
-}
-
-.max-w-\[1170px\] {
-  max-width: 1170px;
 }
 
 .flex-none {
@@ -1672,10 +1669,6 @@ nav ul li>a:hover {
 
 .gap-\[5px\] {
   gap: 5px;
-}
-
-.gap-\[64px\] {
-  gap: 64px;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2387,6 +2380,11 @@ nav ul li>a:hover {
   padding-right: 48px;
 }
 
+.px-\[60px\] {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -2395,6 +2393,11 @@ nav ul li>a:hover {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-\[100px\] {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .py-\[15px\] {
@@ -2420,16 +2423,6 @@ nav ul li>a:hover {
 .py-\[50px\] {
   padding-top: 50px;
   padding-bottom: 50px;
-}
-
-.py-\[100px\] {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.px-\[60px\] {
-  padding-left: 60px;
-  padding-right: 60px;
 }
 
 .pl-8 {
@@ -3052,13 +3045,13 @@ nav ul li>a:hover {
   forced-color-adjust: none;
 }
 
-.\[vite\:css\] {
+/* .\[vite\:css\] {
   vite: css;
 }
 
 .\[vite\:html\] {
   vite: html;
-}
+} */
 
 @media (min-width: 640px) {
   .sm\:container {
@@ -3148,21 +3141,6 @@ nav ul li>a:hover {
   left: 50%;
 }
 
-.before\:top-0::before {
-  content: var(--tw-content);
-  top: 0px;
-}
-
-.before\:z-\[1\]::before {
-  content: var(--tw-content);
-  z-index: 1;
-}
-
-.before\:h-\[18px\]::before {
-  content: var(--tw-content);
-  height: 18px;
-}
-
 .before\:h-\[4px\]::before {
   content: var(--tw-content);
   height: 4px;
@@ -3171,11 +3149,6 @@ nav ul li>a:hover {
 .before\:h-full::before {
   content: var(--tw-content);
   height: 100%;
-}
-
-.before\:w-\[18px\]::before {
-  content: var(--tw-content);
-  width: 18px;
 }
 
 .before\:w-\[50px\]::before {
@@ -3199,16 +3172,6 @@ nav ul li>a:hover {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.67) 65.1%);
 }
 
-.before\:bg-name::before {
-  content: var(--tw-content);
-  background-image: url('../src/img/name.svg');
-}
-
-.before\:bg-contain::before {
-  content: var(--tw-content);
-  background-size: contain;
-}
-
 .before\:bg-cover::before {
   content: var(--tw-content);
   background-size: cover;
@@ -3217,11 +3180,6 @@ nav ul li>a:hover {
 .before\:bg-center::before {
   content: var(--tw-content);
   background-position: center;
-}
-
-.before\:bg-no-repeat::before {
-  content: var(--tw-content);
-  background-repeat: no-repeat;
 }
 
 .before\:content-\[\'\'\]::before {
