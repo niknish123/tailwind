@@ -626,7 +626,7 @@
      </section>
     <!-- Blog Section Ends Here -->
     <!-- Contact Section Starts Here -->
-     <section class="contact-section flex items-center h-[763px]">
+     <section class="contact-section flex lg:h-[763px] h-ful lg:flex-row flex-col">
         <div class="map lg:w-[45%] w-full h-full">
             <img src="./src/img/map.png" alt="map" role="img" class="w-full h-full object-cover">
         </div>
@@ -636,9 +636,9 @@
                     <h2 class="text-h2 text-blue">Paint Correction</h2>
                 </div>
                 <form action="#">
-                    <div class="flex mb-4">
-                        <input type="text" id="name" name="name" placeholder="Name*" required class="w-[47%] py-3 px-[18px] border-b !border-b-black-100 mr-[16px]">
-                        <input type="email" id="email" name="email" placeholder="Email Address*" required class="w-[49%] py-3 px-[18px] border-b !border-b-black-100">
+                    <div class="flex mb-4 flex-col sm:flex-row sm:space-y-0 space-y-4">
+                        <input type="text" id="name" name="name" placeholder="Name*" required class="sm:w-[47%] w-full py-3 px-[18px] border-b !border-b-black-100 mr-[16px]">
+                        <input type="email" id="email" name="email" placeholder="Email Address*" required class="sm:w-[49%] w-full py-3 px-[18px] border-b !border-b-black-100">
                     </div>
                     
                     <input type="text" id="subject" name="text" placeholder="Subject" required class="w-full py-3 px-[18px] border-b !border-b-black-100 mb-4">
@@ -654,9 +654,9 @@
      </section>
     <!-- Contact Section Ends Here -->
     <!-- CTA Section Starts Here -->
-     <section class="cta py-[100px]">
+     <section class="cta md:pt-[100px] pt-0 pb-[100px]">
         <div class="container">
-            <div class="schedule-block max-w-[1170px] mx-auto bg-red py-[50px] px-[60px] flex flex-wrap justify-between gap-8 relative mb-[-180px]">
+            <div class="schedule-block max-w-[1170px] mx-auto bg-red lg:py-[50px] lg:px-[60px] py-8 px-8 flex flex-wrap justify-between gap-8 relative mb-[-180px]">
                 <h2 class="text-h2 text-white">Schedule Your Appointment Today</h2>
                 <div class="btn-blue">
                     <a href="#" role="link">Get A Quote Now</a>
@@ -707,7 +707,17 @@
                 <!--  -->
             </div>
         </div>
+       
      </footer>
+     <div class="copy-right bg-red">
+        <div class="container">
+            <div class="inner flex flex-col md:flex-row md:justify-between  justify-center items-center gap-6 py-[30px] text-white md:text-left text-center">
+                <p>© Copyright - 2022. Marco's Prestigious Auto Detail. All Rights Reserved.</p>
+                <a href="#"><img src="./src/img/facebook.svg" alt="facebook icon" role="img"></a>
+            </div>
+        </div>
+        
+    </div>
      <!-- Footer Ends Here -->
      <!--  -->
     <!--===== SCRIPT =====-->

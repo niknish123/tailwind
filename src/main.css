@@ -1056,10 +1056,6 @@ nav ul li>a:hover {
   height: 60px;
 }
 
-.h-\[763px\] {
-  height: 763px;
-}
-
 .h-\[89px\] {
   height: 89px;
 }
@@ -1088,24 +1084,12 @@ nav ul li>a:hover {
   width: 300px;
 }
 
-.w-\[47\%\] {
-  width: 47%;
-}
-
-.w-\[49\%\] {
-  width: 49%;
-}
-
 .w-\[60px\] {
   width: 60px;
 }
 
 .w-\[65\%\] {
   width: 65%;
-}
-
-.w-\[calc\(25\%-21px\)\] {
-  width: calc(25% - 21px);
 }
 
 .w-\[this-is\\\\\] {
@@ -1122,14 +1106,6 @@ nav ul li>a:hover {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[calc\(25\%-2px\)\] {
-  width: calc(25% - 2px);
-}
-
-.w-\[calc\(25\%-25px\)\] {
-  width: calc(25% - 25px);
 }
 
 .max-w-\[1170px\] {
@@ -1672,6 +1648,10 @@ nav ul li>a:hover {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .gap-8 {
@@ -2383,6 +2363,11 @@ nav ul li>a:hover {
   padding-right: 1.25rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .px-\[15px\] {
   padding-left: 15px;
   padding-right: 15px;
@@ -2403,11 +2388,6 @@ nav ul li>a:hover {
   padding-right: 48px;
 }
 
-.px-\[60px\] {
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -2416,11 +2396,6 @@ nav ul li>a:hover {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-\[100px\] {
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .py-\[15px\] {
@@ -2448,6 +2423,10 @@ nav ul li>a:hover {
   padding-bottom: 50px;
 }
 
+.pb-\[100px\] {
+  padding-bottom: 100px;
+}
+
 .pb-\[60px\] {
   padding-bottom: 60px;
 }
@@ -2458,6 +2437,10 @@ nav ul li>a:hover {
 
 .pr-8 {
   padding-right: 2rem;
+}
+
+.pt-0 {
+  padding-top: 0px;
 }
 
 .pt-\[120px\] {
@@ -3237,11 +3220,6 @@ nav ul li>a:hover {
   top: 0px;
 }
 
-.\*\:before\:top-\[2px\] > *::before {
-  content: var(--tw-content);
-  top: 2px;
-}
-
 .\*\:before\:top-\[4px\] > *::before {
   content: var(--tw-content);
   top: 4px;
@@ -3367,8 +3345,26 @@ nav ul li>a:hover {
 }
 
 @media (min-width: 640px) {
+  .sm\:w-\[47\%\] {
+    width: 47%;
+  }
+
+  .sm\:w-\[49\%\] {
+    width: 49%;
+  }
+
   .sm\:w-\[calc\(50\%-20px\)\] {
     width: calc(50% - 20px);
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .sm\:underline {
@@ -3387,6 +3383,14 @@ nav ul li>a:hover {
 
   .md\:w-\[calc\(50\%-20px\)\] {
     width: calc(50% - 20px);
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
   }
 
   .md\:px-\[80px\] {
@@ -3420,6 +3424,14 @@ nav ul li>a:hover {
 
   .md\:pr-\[48px\] {
     padding-right: 48px;
+  }
+
+  .md\:pt-\[100px\] {
+    padding-top: 100px;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 }
 
@@ -3456,6 +3468,10 @@ nav ul li>a:hover {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:h-\[763px\] {
+    height: 763px;
   }
 
   .lg\:h-auto {
@@ -3527,6 +3543,11 @@ nav ul li>a:hover {
     padding-right: 100px;
   }
 
+  .lg\:px-\[60px\] {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
   .lg\:py-\[100px\] {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -3535,6 +3556,11 @@ nav ul li>a:hover {
   .lg\:py-\[150px\] {
     padding-top: 150px;
     padding-bottom: 150px;
+  }
+
+  .lg\:py-\[50px\] {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .lg\:pl-\[100px\] {
@@ -3629,11 +3655,6 @@ nav ul li>a:hover {
 .\[\&\>\*\:nth-of-type\(2\)\]\:before\:bg-call_icon>*:nth-of-type(2)::before {
   content: var(--tw-content);
   background-image: url('../src/img/call-white.svg');
-}
-
-.\[\&\>\*\:nth-of-type\(3\)\]\:before\:bg-location_icon>*:nth-of-type(3)::before {
-  content: var(--tw-content);
-  background-image: url('../src/img/whitelocation.svg');
 }
 
 .\[\&\>\*\:nth-of-type\(3\)\]\:before\:bg-mail_icon>*:nth-of-type(3)::before {
