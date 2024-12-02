@@ -347,6 +347,7 @@ button,
 input:where([type='button']),
 input:where([type='reset']),
 input:where([type='submit']) {
+  -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
   /* 2 */
@@ -393,7 +394,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 */
 
 [type='search'] {
-
+  -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
   /* 2 */
@@ -413,7 +414,7 @@ Remove the inner padding in Chrome and Safari on macOS.
 */
 
 ::-webkit-file-upload-button {
-
+  -webkit-appearance: button;
   /* 1 */
   font: inherit;
   /* 2 */
@@ -532,7 +533,9 @@ iframe,
 embed,
 object {
   display: block;
-
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
 }
 
 /*
@@ -894,8 +897,16 @@ nav ul li>a:hover {
   margin-bottom: 2rem;
 }
 
+.mb-\[-180px\] {
+  margin-bottom: -180px;
+}
+
 .mb-\[15px\] {
   margin-bottom: 15px;
+}
+
+.mb-\[30px\] {
+  margin-bottom: 30px;
 }
 
 .mr-\[16px\] {
@@ -1093,6 +1104,10 @@ nav ul li>a:hover {
   width: 65%;
 }
 
+.w-\[calc\(25\%-21px\)\] {
+  width: calc(25% - 21px);
+}
+
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -1107,6 +1122,14 @@ nav ul li>a:hover {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[calc\(25\%-2px\)\] {
+  width: calc(25% - 2px);
+}
+
+.w-\[calc\(25\%-25px\)\] {
+  width: calc(25% - 25px);
 }
 
 .max-w-\[1170px\] {
@@ -2425,12 +2448,20 @@ nav ul li>a:hover {
   padding-bottom: 50px;
 }
 
+.pb-\[60px\] {
+  padding-bottom: 60px;
+}
+
 .pl-8 {
   padding-left: 2rem;
 }
 
 .pr-8 {
   padding-right: 2rem;
+}
+
+.pt-\[120px\] {
+  padding-top: 120px;
 }
 
 .pt-\[380px\] {
@@ -3045,13 +3076,13 @@ nav ul li>a:hover {
   forced-color-adjust: none;
 }
 
-/* .\[vite\:css\] {
+.\[vite\:css\] {
   vite: css;
 }
 
 .\[vite\:html\] {
   vite: html;
-} */
+}
 
 @media (min-width: 640px) {
   .sm\:container {
@@ -3097,6 +3128,10 @@ nav ul li>a:hover {
 
 .\*\:gap-\[10px\] > * {
   gap: 10px;
+}
+
+.\*\:break-words > * {
+  overflow-wrap: break-word;
 }
 
 .\*\:pl-8 > * {
@@ -3202,6 +3237,21 @@ nav ul li>a:hover {
   top: 0px;
 }
 
+.\*\:before\:top-\[2px\] > *::before {
+  content: var(--tw-content);
+  top: 2px;
+}
+
+.\*\:before\:top-\[4px\] > *::before {
+  content: var(--tw-content);
+  top: 4px;
+}
+
+.\*\:before\:h-4 > *::before {
+  content: var(--tw-content);
+  height: 1rem;
+}
+
 .\*\:before\:h-6 > *::before {
   content: var(--tw-content);
   height: 1.5rem;
@@ -3210,6 +3260,11 @@ nav ul li>a:hover {
 .\*\:before\:h-\[20px\] > *::before {
   content: var(--tw-content);
   height: 20px;
+}
+
+.\*\:before\:w-4 > *::before {
+  content: var(--tw-content);
+  width: 1rem;
 }
 
 .\*\:before\:w-6 > *::before {
@@ -3230,6 +3285,11 @@ nav ul li>a:hover {
 .\*\:before\:bg-blue_arrow > *::before {
   content: var(--tw-content);
   background-image: url('../src/img/blue-arrow.svg');
+}
+
+.\*\:before\:bg-link_arrow > *::before {
+  content: var(--tw-content);
+  background-image: url('../src/img/linkarrow.svg');
 }
 
 .\*\:before\:bg-contain > *::before {
@@ -3360,6 +3420,12 @@ nav ul li>a:hover {
 
   .md\:pr-\[48px\] {
     padding-right: 48px;
+  }
+}
+
+@media (min-width: 991px) {
+  .xlg\:w-\[calc\(25\%-25px\)\] {
+    width: calc(25% - 25px);
   }
 }
 
@@ -3553,4 +3619,24 @@ nav ul li>a:hover {
       paint-order: markers;
     }
   }
+}
+
+.\[\&\>\*\:nth-of-type\(1\)\]\:before\:bg-location_icon>*:nth-of-type(1)::before {
+  content: var(--tw-content);
+  background-image: url('../src/img/whitelocation.svg');
+}
+
+.\[\&\>\*\:nth-of-type\(2\)\]\:before\:bg-call_icon>*:nth-of-type(2)::before {
+  content: var(--tw-content);
+  background-image: url('../src/img/call-white.svg');
+}
+
+.\[\&\>\*\:nth-of-type\(3\)\]\:before\:bg-location_icon>*:nth-of-type(3)::before {
+  content: var(--tw-content);
+  background-image: url('../src/img/whitelocation.svg');
+}
+
+.\[\&\>\*\:nth-of-type\(3\)\]\:before\:bg-mail_icon>*:nth-of-type(3)::before {
+  content: var(--tw-content);
+  background-image: url('../src/img/mailfooter.svg');
 }

@@ -45,6 +45,12 @@ module.exports = {
         blue_arrow: "url('../src/img/blue-arrow.svg')",
         // form
         name: "url('../src/img/name.svg')",
+        // footer
+        link_arrow: "url('../src/img/linkarrow.svg')",
+        location_icon:"url('../src/img/whitelocation.svg')",
+        call_icon: "url('../src/img/call-white.svg')",
+        mail_icon:"url('../src/img/mailfooter.svg')",
+        
       },
       fontFamily: {
         jost: ["Jost"],
