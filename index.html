@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- swiper -->
+    <link rel="stylesheet" href="./src/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="./src/owl.theme.green.min.css">
+    <!-- fonts -->
+     <link rel="stylesheet" href="./src/font/fontstyle.css">
+     <!-- css -->
+      <link rel="stylesheet" href="./src/main.css">
+</head>
+<body>
+    <!-- Header Starts Here -->
+    <header class="header fixed w-full top-0 left-0 z-[111]">
+        <!-- header-bottom -->
+        <div class="header-main py-[15px]">
+            <div class="container">
+                <div class="flex justify-between items-center gap:3 2xl:gap-8">
+                    <div class="logo max-w-[170px] 2xl:max-w-[250px]">
+                        <a href="#" role="link">
+                            <img
+                                src="./src/img/logo-ready.svg"
+                                alt="company logo"
+                                role="image"
+                                aria-label="logo image"
+                            >
+                        </a>
+                    </div>
+                    <nav class="fixed left-[-1000px] lg:left-0 top-0 lg:relative w-[300px] lg:w-auto h-full lg:h-auto p-6 lg:p-0 bg-blue lg:bg-transparent flex lg:flex-row flex-col gap-8 lg:items-center items-start">
+                        <button class="lg:hidden vs-menu-toggle w-5 h-5 absolute top-3 right-3">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                viewBox="0 0 384 512"
+                            >
+                                <path d="M342.6 150.6a32 32 0 0 0-45.3-45.3L192 210.7 86.6 105.4a32 32 0 0 0-45.3 45.3L146.7 256 41.4 361.4a32 32 0 0 0 45.3 45.3L192 301.3l105.4 105.3a32 32 0 0 0 45.3-45.3L237.3 256l105.3-105.4z" fill="#ffffff"></path>
+                            </svg>
+                        </button>
+                        <ul class="nav-link flex lg:items-center items-start gap-4 2xl:gap-10 *:text-[16px] *:2xl:text-[18px] lg:flex-row flex-col text-white">
+                            <li>
+                                <a href="#" role="link">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" role="link">About</a>
+                            </li>
+                            <li id="toggle-menu"
+                            class="menu-item group flex items-center lg:items-center flex-wrap justify-between lg:justify-normal gap-[16px] lg:gap-[7px] relative cursor-pointer">
+                                <a href="#" role="link" class="relative">Services</a>
+                                <svg width="13" height="7" viewBox="0 0 13 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="fill-white"
+                                    d="M7.03125 6.53125C6.71875 6.84375 6.25 6.84375 5.96875 6.53125L0.96875 1.53125C0.65625 1.25 0.65625 0.78125 0.96875 0.5C1.25 0.1875 1.71875 0.1875 2 0.5L6.46875 4.96875L10.9688 0.46875C11.25 0.1875 11.7188 0.1875 12 0.46875C12.3125 0.78125 12.3125 1.25 12 1.53125L7.03125 6.53125Z" />
+                            </svg>
+                                <ul id="submenu"
+                                class="sub-menu lg:absolute lg:w-[200px] w-full p-4 top-[100%] left-0 bg-white shadow-custom text-black-100 space-y-4 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible lg:transition-all lg:duration-300 hidden lg:block">
+                                    <li><a href="#" role="link">Basic Detail</a></li>
+                                    <li><a href="#" role="link">Special Detail</a></li>
+                                    <li><a href="#" role="link">Ceramic Coating</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" role="link">Paint Correction</a>
+                            </li>
+                            <li>
+                                <a href="#">Photos</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="btn-red">
+                            <a href="#" role="link">Get A Quote</a>
+                        </div>
+                    </nav>
+                        <div class="menu w-10 h-10 p-1 flex flex-col justify-center items-center gap-[5px] border-white border-[1px] border-solid cursor-pointer lg:hidden">
+                            <div class="bg-white w-8 h-[2px]"></div>
+                            <div class="bg-white w-8 h-[2px]"></div>
+                            <div class="bg-white w-8 h-[2px]"></div>
+                        </div>
+                   
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Ends Here -->
+    <!-- Hero Section Starts Here -->
+     <div class="hero w-full  h-[900px]">
+        <div class="owl-carousel owl-theme hero-carousel">
+            <div class="item hero-section w-full bg-hero_bg bg-cover bg-center bg-no-repeat pt-[380px] h-full flex justify-end items-end"> 
+                    <div class="container">
+                        <div class="hero-content max-w-[753px] w-full bg-red p-[100px] text-white">
+                            <div class="text-top text-p text-white">
+                                <p>Marco's Prestigious Auto Detail</p>
+                            </div>
+                            <h1 class="text-h1 mb-[15px]">Professional Auto
+                                Detail Service</h1>
+                            <p>Find the perfect car dealing services.</p>
+                            <div class="btn-blue mt-8">
+                                <a href="#" role="link">Contact Now
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.875 11.5352L13.4297 10.0586C12.6562 9.70703 11.7773 9.95312 11.25 10.5859L10.3008 11.7461C8.71875 10.832 7.41797 9.53125 6.50391 7.98438L7.69922 7.03516C8.29688 6.50781 8.54297 5.62891 8.22656 4.89062L6.71484 1.375C6.36328 0.566406 5.48438 0.109375 4.60547 0.320312L1.40625 1.05859C0.5625 1.23438 0 1.97266 0 2.85156C0 11.3594 6.89062 18.25 15.3984 18.25C16.2773 18.25 17.0156 17.6875 17.1562 16.8438L17.8945 13.6445C18.1406 12.7656 17.6836 11.8867 16.875 11.5352ZM16.2773 13.2578L15.5391 16.457C15.5391 16.4922 15.4688 16.5625 15.3984 16.5625C7.83984 16.5625 1.65234 10.4102 1.65234 2.85156C1.65234 2.78125 1.72266 2.71094 1.79297 2.71094L4.99219 1.97266L5.02734 1.9375C5.09766 1.9375 5.13281 2.00781 5.16797 2.04297L6.64453 5.48828C6.67969 5.55859 6.67969 5.62891 6.60938 5.66406L4.88672 7.07031C4.60547 7.31641 4.5 7.73828 4.67578 8.08984C5.83594 10.4453 7.76953 12.3789 10.125 13.5391C10.4766 13.7148 10.9336 13.6445 11.1797 13.3281L12.5859 11.6055C12.6211 11.5703 12.6914 11.5352 12.7617 11.5703L16.207 13.0469C16.2773 13.1172 16.3125 13.1875 16.2773 13.2578Z" fill="white"/>
+                                        </svg>     
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+            </div>
+            <div class="item hero-section w-full bg-hero_bg bg-cover bg-center bg-no-repeat pt-[380px] h-full flex justify-end items-end"> 
+                    <div class="container">
+                        <div class="hero-content max-w-[753px] w-full bg-red p-[100px] text-white">
+                            <div class="text-top text-p text-white">
+                                <p>Marco's Prestigious Auto Detail</p>
+                            </div>
+                            <h1 class="text-h1 mb-[15px]">Professional Auto
+                                Detail Service</h1>
+                            <p>Find the perfect car dealing services.</p>
+                            <div class="btn-blue mt-8">
+                                <a href="#" role="link">Contact Now
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.875 11.5352L13.4297 10.0586C12.6562 9.70703 11.7773 9.95312 11.25 10.5859L10.3008 11.7461C8.71875 10.832 7.41797 9.53125 6.50391 7.98438L7.69922 7.03516C8.29688 6.50781 8.54297 5.62891 8.22656 4.89062L6.71484 1.375C6.36328 0.566406 5.48438 0.109375 4.60547 0.320312L1.40625 1.05859C0.5625 1.23438 0 1.97266 0 2.85156C0 11.3594 6.89062 18.25 15.3984 18.25C16.2773 18.25 17.0156 17.6875 17.1562 16.8438L17.8945 13.6445C18.1406 12.7656 17.6836 11.8867 16.875 11.5352ZM16.2773 13.2578L15.5391 16.457C15.5391 16.4922 15.4688 16.5625 15.3984 16.5625C7.83984 16.5625 1.65234 10.4102 1.65234 2.85156C1.65234 2.78125 1.72266 2.71094 1.79297 2.71094L4.99219 1.97266L5.02734 1.9375C5.09766 1.9375 5.13281 2.00781 5.16797 2.04297L6.64453 5.48828C6.67969 5.55859 6.67969 5.62891 6.60938 5.66406L4.88672 7.07031C4.60547 7.31641 4.5 7.73828 4.67578 8.08984C5.83594 10.4453 7.76953 12.3789 10.125 13.5391C10.4766 13.7148 10.9336 13.6445 11.1797 13.3281L12.5859 11.6055C12.6211 11.5703 12.6914 11.5352 12.7617 11.5703L16.207 13.0469C16.2773 13.1172 16.3125 13.1875 16.2773 13.2578Z" fill="white"/>
+                                        </svg>     
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+            </div>
+            <div class="item hero-section w-full bg-hero_bg bg-cover bg-center bg-no-repeat pt-[380px] h-full flex justify-end items-end"> 
+                <div class="container">
+                    <div class="hero-content max-w-[753px] w-full bg-red p-[100px] text-white">
+                        <div class="text-top text-p text-white">
+                            <p>Marco's Prestigious Auto Detail</p>
+                        </div>
+                        <h1 class="text-h1 mb-[15px]">Professional Auto
+                            Detail Service</h1>
+                        <p>Find the perfect car dealing services.</p>
+                        <div class="btn-blue mt-8">
+                            <a href="#" role="link">Contact Now
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.875 11.5352L13.4297 10.0586C12.6562 9.70703 11.7773 9.95312 11.25 10.5859L10.3008 11.7461C8.71875 10.832 7.41797 9.53125 6.50391 7.98438L7.69922 7.03516C8.29688 6.50781 8.54297 5.62891 8.22656 4.89062L6.71484 1.375C6.36328 0.566406 5.48438 0.109375 4.60547 0.320312L1.40625 1.05859C0.5625 1.23438 0 1.97266 0 2.85156C0 11.3594 6.89062 18.25 15.3984 18.25C16.2773 18.25 17.0156 17.6875 17.1562 16.8438L17.8945 13.6445C18.1406 12.7656 17.6836 11.8867 16.875 11.5352ZM16.2773 13.2578L15.5391 16.457C15.5391 16.4922 15.4688 16.5625 15.3984 16.5625C7.83984 16.5625 1.65234 10.4102 1.65234 2.85156C1.65234 2.78125 1.72266 2.71094 1.79297 2.71094L4.99219 1.97266L5.02734 1.9375C5.09766 1.9375 5.13281 2.00781 5.16797 2.04297L6.64453 5.48828C6.67969 5.55859 6.67969 5.62891 6.60938 5.66406L4.88672 7.07031C4.60547 7.31641 4.5 7.73828 4.67578 8.08984C5.83594 10.4453 7.76953 12.3789 10.125 13.5391C10.4766 13.7148 10.9336 13.6445 11.1797 13.3281L12.5859 11.6055C12.6211 11.5703 12.6914 11.5352 12.7617 11.5703L16.207 13.0469C16.2773 13.1172 16.3125 13.1875 16.2773 13.2578Z" fill="white"/>
+                                    </svg>     
+                            </a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+     </div>
+    <!-- Hero Section Ends Here -->
+     <!-- Blue CTA Section Starts Here -->
+     <div class="blue-cta bg-blue md:py-[50px] py-[40px]">
+        <div class="container">
+            <div class="inner flex justify-center">
+                <h2 class="text-h2 text-white">Experience The Best Detailing Services!</h2>
+            </div>
+        </div>
+     </div>
+     <!-- Blue CTA Section Ends Here -->
+    <!-- Service Section Starts Here -->
+     <section class="service-section lg:py-[100px] md:py-[70px] py-[40px]">
+         <div class="container">
+            <div class="heading relative before:content-[''] before:w-[50px] before:h-[4px] before:bg-red before:absolute before:bottom-[-10px] before:left-[50%]">
+                <h2 class="text-h2 text-blue text-center">Our Services</h2>
+            </div>
+         </div>
+         <div class="card-area 2xl:px-[77px] px-[15px] flex flex-wrap gap-[30px] mt-[60px]">
+            <div class="card relative before:content-[''] before:w-full before:h-full before:absolute *:before:top-0 before:left-0 before:bg-cardGradient before:bg-cover before:bg-center overflow-hidden lg:w-[calc(25%-23px)] md:w-[calc(50%-20px)] w-full h-full hover:*:opacity-[1] hover:*:z-[1] transition-all duration-300 ease-linear">
+                <img src="./src/img/project_image_01.jpg" alt="card image" role="img" class="w-full h-full object-cover">
+               <div class="content 2xl:p-[50px] p-4 w-full h-full absolute bottom-0 z-[0] opacity-0">
+                    <div class="inn-content bg-red p-[30px] h-full w-full flex justify-center flex-col">
+                        <div class="text space-y-[10px]">
+                            <h3 class="text-h3 text-white">Basic Detail</h3>
+                            <ul class="space-y-[15px] *:relative text-white *:pl-[30px] *:before:content-[''] *:before:w-[20px] *:before:h-[20px] *:before:bg-arrow_white *:before:bg-cover *:before:bg-center *:before:bg-no-repeat *:before:absolute *:before:top-0 *:before:left-0">
+                                <li>Starts At $899 S/m Cars</li>
+                                <li>Starts At $1099 Suv/trucks</li>
+                                <li>Starts At $1399 Exotic</li>
+                            </ul>
+                        </div>
+                        <div class="btn-blue mt-8 w-full flex justify-center">
+                            <a href="#" role="link">Read More
+                                 <svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.2773 11.5938C12.1133 11.4531 12.0312 11.2656 12.0312 11.0312C12.0312 10.7969 12.1133 10.5977 12.2773 10.4336L15.6172 7.09375H1.34375C0.828125 7.04688 0.546875 6.75391 0.5 6.21484C0.546875 5.72266 0.828125 5.45312 1.34375 5.40625H15.6172L12.2773 2.06641C11.9492 1.66797 11.9492 1.26953 12.2773 0.871094C12.6758 0.542969 13.0742 0.542969 13.4727 0.871094L18.2539 5.65234C18.582 6.05078 18.582 6.44922 18.2539 6.84766L13.4727 11.6289C13.0742 11.957 12.6758 11.9453 12.2773 11.5938Z" fill="white"/>
+                                </svg>
+                                </a>
+                        </div>
+                    </div>
+               </div> 
+               <h3 class="text-h3 text-white absolute bottom-[64px] left-[35%]">Basic Detail</h3>
+            </div>
+            <!--  -->
+            <div class="card relative before:content-[''] before:w-full before:h-full before:absolute *:before:top-0 before:left-0 before:bg-cardGradient before:bg-cover before:bg-center overflow-hidden lg:w-[calc(25%-23px)] md:w-[calc(50%-20px)] w-full h-full hover:*:opacity-[1] hover:*:z-[1] transition-all duration-300 ease-linear">
+                <img src="./src/img/project_image_02.jpg" alt="card image" role="img" class="w-full h-full object-cover">
+               <div class="content 2xl:p-[50px] p-4 w-full h-full absolute bottom-0 z-[0] opacity-0">
+                    <div class="inn-content bg-red p-[30px] h-full w-full flex justify-center flex-col">
+                        <div class="text space-y-[10px]">
+                            <h3 class="text-h3 text-white">Special Detail</h3>
+                            <ul class="space-y-[15px] *:relative text-white *:pl-[30px] *:before:content-[''] *:before:w-[20px] *:before:h-[20px] *:before:bg-arrow_white *:before:bg-cover *:before:bg-center *:before:bg-no-repeat *:before:absolute *:before:top-0 *:before:left-0">
+                                <li>Starts At $899 S/m Cars</li>
+                                <li>Starts At $1099 Suv/trucks</li>
+                                <li>Starts At $1399 Exotic</li>
+                            </ul>
+                        </div>
+                        <div class="btn-blue mt-8 w-full flex justify-center">
+                            <a href="#" role="link">Read More
+                                 <svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.2773 11.5938C12.1133 11.4531 12.0312 11.2656 12.0312 11.0312C12.0312 10.7969 12.1133 10.5977 12.2773 10.4336L15.6172 7.09375H1.34375C0.828125 7.04688 0.546875 6.75391 0.5 6.21484C0.546875 5.72266 0.828125 5.45312 1.34375 5.40625H15.6172L12.2773 2.06641C11.9492 1.66797 11.9492 1.26953 12.2773 0.871094C12.6758 0.542969 13.0742 0.542969 13.4727 0.871094L18.2539 5.65234C18.582 6.05078 18.582 6.44922 18.2539 6.84766L13.4727 11.6289C13.0742 11.957 12.6758 11.9453 12.2773 11.5938Z" fill="white"/>
+                                </svg>
+                                </a>
+                        </div>
+                    </div>
+               </div> 
+               <h3 class="text-h3 text-white absolute bottom-[64px] left-[35%]">Basic Detail</h3>
+            </div>
+            <!--  -->
+            <div class="card relative before:content-[''] before:w-full before:h-full before:absolute *:before:top-0 before:left-0 before:bg-cardGradient before:bg-cover before:bg-center overflow-hidden lg:w-[calc(25%-23px)] md:w-[calc(50%-20px)] w-full h-full hover:*:opacity-[1] hover:*:z-[1] transition-all duration-300 ease-linear">
+                <img src="./src/img/project_image_03.jpg" alt="card image" role="img" class="w-full h-full object-cover">
+               <div class="content 2xl:p-[50px] p-4 w-full h-full absolute bottom-0 z-[0] opacity-0">
+                    <div class="inn-content bg-red p-[30px] h-full w-full flex justify-center flex-col">
+                        <div class="text space-y-[10px]">
+                            <h3 class="text-h3 text-white">Ceramic Coating</h3>
+                            <ul class="space-y-[15px] *:relative text-white *:pl-[30px] *:before:content-[''] *:before:w-[20px] *:before:h-[20px] *:before:bg-arrow_white *:before:bg-cover *:before:bg-center *:before:bg-no-repeat *:before:absolute *:before:top-0 *:before:left-0">
+                                <li>Starts At $899 S/m Cars</li>
+                                <li>Starts At $1099 Suv/trucks</li>
+                                <li>Starts At $1399 Exotic</li>
+                            </ul>
+                        </div>
+                        <div class="btn-blue mt-8 w-full flex justify-center">
+                            <a href="#" role="link">Read More
+                                 <svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.2773 11.5938C12.1133 11.4531 12.0312 11.2656 12.0312 11.0312C12.0312 10.7969 12.1133 10.5977 12.2773 10.4336L15.6172 7.09375H1.34375C0.828125 7.04688 0.546875 6.75391 0.5 6.21484C0.546875 5.72266 0.828125 5.45312 1.34375 5.40625H15.6172L12.2773 2.06641C11.9492 1.66797 11.9492 1.26953 12.2773 0.871094C12.6758 0.542969 13.0742 0.542969 13.4727 0.871094L18.2539 5.65234C18.582 6.05078 18.582 6.44922 18.2539 6.84766L13.4727 11.6289C13.0742 11.957 12.6758 11.9453 12.2773 11.5938Z" fill="white"/>
+                                </svg>
+                                </a>
+                        </div>
+                    </div>
+               </div> 
+               <h3 class="text-h3 text-white absolute bottom-[64px] left-[35%]">Basic Detail</h3>
+            </div>
+            <!--  -->
+            <div class="card relative before:content-[''] before:w-full before:h-full before:absolute *:before:top-0 before:left-0 before:bg-cardGradient before:bg-cover before:bg-center overflow-hidden lg:w-[calc(25%-23px)] md:w-[calc(50%-20px)] w-full h-full hover:*:opacity-[1] hover:*:z-[1] transition-all duration-300 ease-linear">
+                <img src="./src/img/project_image_04.jpg" alt="card image" role="img" class="w-full h-full object-cover">
+               <div class="content 2xl:p-[50px] p-4 w-full h-full absolute bottom-0 z-[0] opacity-0">
+                    <div class="inn-content bg-red p-[30px] h-full w-full flex justify-center flex-col">
+                        <div class="text space-y-[10px]">
+                            <h3 class="text-h3 text-white">Paint Correction</h3>
+                            <ul class="space-y-[15px] *:relative text-white *:pl-[30px] *:before:content-[''] *:before:w-[20px] *:before:h-[20px] *:before:bg-arrow_white *:before:bg-cover *:before:bg-center *:before:bg-no-repeat *:before:absolute *:before:top-0 *:before:left-0">
+                                <li>Starts At $899 S/m Cars</li>
+                                <li>Starts At $1099 Suv/trucks</li>
+                                <li>Starts At $1399 Exotic</li>
+                            </ul>
+                        </div>
+                        <div class="btn-blue mt-8 w-full flex justify-center">
+                            <a href="#" role="link">Read More
+                                 <svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.2773 11.5938C12.1133 11.4531 12.0312 11.2656 12.0312 11.0312C12.0312 10.7969 12.1133 10.5977 12.2773 10.4336L15.6172 7.09375H1.34375C0.828125 7.04688 0.546875 6.75391 0.5 6.21484C0.546875 5.72266 0.828125 5.45312 1.34375 5.40625H15.6172L12.2773 2.06641C11.9492 1.66797 11.9492 1.26953 12.2773 0.871094C12.6758 0.542969 13.0742 0.542969 13.4727 0.871094L18.2539 5.65234C18.582 6.05078 18.582 6.44922 18.2539 6.84766L13.4727 11.6289C13.0742 11.957 12.6758 11.9453 12.2773 11.5938Z" fill="white"/>
+                                </svg>
+                                </a>
+                        </div>
+                    </div>
+               </div> 
+               <h3 class="text-h3 text-white absolute bottom-[64px] left-[35%]">Basic Detail</h3>
+            </div>
+            <!--  -->
+         </div>
+     </section>
+    <!-- Service Section Ends Here -->
+    <!-- Facts Section Starts Here -->
+     <section class="fact-section h-full flex  bg-blue lg:flex-row flex-col">
+        <div class="left lg:w-[50%] w-full 2xl:pl-[240px] lg:py-[100px] lg:pr-[100px] lg:pl-[100px] md:pl-[48px] md:py-[48px] md:pr-[48px] pl-8 py-8 pr-8 flex justify-end items-end">
+            <div class="left-text space-y-8 text-body text-white">
+                <div class="heading relative before:content-[''] before:w-[50px] before:h-[4px] before:bg-red before:absolute before:bottom-[-10px] before:left-0 mb-8">
+                    <h2 class="text-h2 text-white">Company Facts</h2>
+                   
+                </div>
+                <p>Marco is an individual with a common passion in car detailing. We sincerely believe in teamwork and good fellowship as the key to success in meeting the needs of our clients. We are a mobile auto detailing service that puts customer satisfaction above all else. We are committed to deliver the best service to every vehicle that comes into our care, we understand that a car is one big investment, therefore, we provide the best detailing service to help you protect your investment , save you time, and maintain the value of your vehicle. Call us and let us exceed your expectations, with professionalism, passion and perfection</p>
+                <div class="btn-red *:flex *:justify-center *:items-center *:gap-3 border border-red hover:border-white hover:bg-transparent hover:text-white">
+                    <a href="#" role="link">Learn More 
+                        <svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.7773 11.5938C11.6133 11.4531 11.5312 11.2656 11.5312 11.0312C11.5312 10.7969 11.6133 10.5977 11.7773 10.4336L15.1172 7.09375H0.84375C0.328125 7.04688 0.046875 6.75391 0 6.21484C0.046875 5.72266 0.328125 5.45312 0.84375 5.40625H15.1172L11.7773 2.06641C11.4492 1.66797 11.4492 1.26953 11.7773 0.871094C12.1758 0.542969 12.5742 0.542969 12.9727 0.871094L17.7539 5.65234C18.082 6.05078 18.082 6.44922 17.7539 6.84766L12.9727 11.6289C12.5742 11.957 12.1758 11.9453 11.7773 11.5938Z" fill="white"/>
+                        </svg>
+                        </a>
+                </div>
+            </div>
+        </div>
+        <div class="right lg:w-[50%] w-full flex justify-stretch items-stretch">
+            <img src="./src/img/factsimg.jpg" alt="fact section image" role="img" class="w-full h-full object-cover">
+        </div>
+     </section>
+    <!-- Facts Section Ends Here -->
+    <!-- Process Section Starts Here -->
+     <section class="process-section lg:py-[100px] md:py-[70px] py-[40px]">
+        <div class="container">
+            <div class="process-inner flex gap-8 xl:flex-row flex-col">
+                <div class="left xl:w-[50%] w-full">
+                        <div class="heading text-center text-black-100 space-y-8"> 
+                            <h2 class="text-h2 text-blue relative before:content-[''] before:w-[50px] before:h-[4px] before:bg-red before:absolute before:bottom-[-10px] before:left-[45%]">Process</h2>
+                            <p>This is how we provide you with a trusted and excellent services.</p>
+                        </div>
+                        <div class="process-block flex gap-[30px] flex-wrap lg:mt-[50px] mt-8">
+                            <div class="block1 border border-[#F2F2F2] p-[30px] sm:w-[calc(50%-20px)] w-full flex justify-start items-start gap-4">
+                                <div class="icon w-[60px] h-[60px] flex-none">
+                                    <img src="./src/img/Standards.svg" alt="standards icon" role="img">
+                                </div>
+                                <div class="b-text text-black-100 space-y-4">
+                                    <h3 class="text-h4 text-blue">Standards</h3>
+                                    <p>Each of our uniformed professionals is bonded and insured and works with the highest standards.</p>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="block1 border border-[#F2F2F2] p-[30px] sm:w-[calc(50%-20px)] w-full flex justify-start items-start gap-4">
+                                <div class="icon w-[60px] h-[60px] flex-none">
+                                    <img src="./src/img/Dedication.svg" alt="Dedication icon" role="img">
+                                </div>
+                                <div class="b-text text-black-100 space-y-4">
+                                    <h3 class="text-h4 text-blue">Dedication</h3>
+                                    <p>Our client service lines are open 24/7, and we aim to respond to emergencies within two hours.</p>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="block1 border border-[#F2F2F2] p-[30px] sm:w-[calc(50%-20px)] w-full flex justify-start items-start gap-4">
+                                <div class="icon w-[60px] h-[60px] flex-none">
+                                    <img src="./src/img/Quality.svg" alt="Quality icon" role="img">
+                                </div>
+                                <div class="b-text text-black-100 space-y-4">
+                                    <h3 class="text-h4 text-blue">Quality</h3>
+                                    <p>We use innovative auto detail cleaning techniques, constantly testing new methods and improving our systems.</p>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="block1 border border-[#F2F2F2] p-[30px] sm:w-[calc(50%-20px)] w-full flex justify-start items-start gap-4">
+                                <div class="icon w-[60px] h-[60px] flex-none">
+                                    <img src="./src/img/perfection.svg" alt="perfection icon" role="img">
+                                </div>
+                                <div class="b-text text-black-100 space-y-4">
+                                    <h3 class="text-h4 text-blue">Perfection</h3>
+                                    <p>Your total satisfaction is always our top priority. Our company has been trusted and respected for over 12 years.</p>
+                                </div>
+                            </div>
+                            <!--  -->
+                        </div>
+                </div>
+                <div class="right xl:w-[50%] w-full flex xl:justify-end justify-start items-end">
+                    <img src="./src/img/process-img.jpg" alt="section image" role="img">
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Facts Section Ends Here -->
+    <!-- Logo Section Starts Here -->
+     <section class="company-logo bg-blue py-[50px]">
+        <div class="container">
+            <div class="inner">
+                <div class="heading relative before:content-[''] before:w-[50px] before:h-[4px] before:bg-red before:absolute before:bottom-[-10px] before:left-[50%]">
+                    <h2 class="text-h2 text-white text-center">Some Of The Brands We Work</h2>
+                </div>
+                <div class="logo-slider mt-[50px]">
+                    <div class="owl-carousel owl-theme company-slider">
+                        <div class="item company-logo flex justify-center items-center h-[89px]">
+                            <img src="./src/img/Frame1.png" alt="company-logo" role="img" class="!h-full object-contain">
+                        </div>
+                        <div class="item company-logo flex justify-center items-center h-[89px]">
+                            <img src="./src/img/Frame2.jpg" alt="company-logo" role="img" class="!h-full object-contain">
+                        </div>
+                        <div class="item company-logo flex justify-center items-center h-[89px]">
+                            <img src="./src/img/Frame3.png" alt="company-logo" role="img" class="!h-full object-contain">
+                        </div>
+                        <div class="item company-logo flex justify-center items-center h-[89px]">
+                            <img src="./src/img/Frame4.png" alt="company-logo" role="img" class="!h-full object-contain">
+                        </div>
+                        <div class="item company-logo flex justify-center items-center h-[89px]">
+                            <img src="./src/img/Frame5.png" alt="company-logo" role="img" class="!h-full object-contain">
+                        </div>
+                        <div class="item company-logo flex justify-center items-center h-[89px]">
+                            <img src="./src/img/Frame1.png" alt="company-logo" role="img" class="!h-full object-contain">
+                        </div>
+                        <div class="item company-logo flex justify-center items-center h-[89px]">
+                            <img src="./src/img/Frame2.jpg" alt="company-logo" role="img" class="!h-full object-contain">
+                        </div>
+                        <div class="item company-logo flex justify-center items-center h-[89px]">
+                            <img src="./src/img/Frame3.png" alt="company-logo" role="img" class="!h-full object-contain">
+                        </div>
+                        <div class="item company-logo flex justify-center items-center h-[89px]">
+                            <img src="./src/img/Frame4.png" alt="company-logo" role="img" class="!h-full object-contain">
+                        </div>
+                        <div class="item company-logo flex justify-center items-center h-[89px]">
+                            <img src="./src/img/Frame5.png" alt="company-logo" role="img" class="!h-full object-contain">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Logo Section Ends Here -->
+    <!-- Cta Section Starts Here -->
+     <section class="cta-section lg:py-[100px] md:py-[70px] py-[40px] bg-cta_bg bg-cover bg-center bg-no-repeat">
+        <div class="container">
+            <div class="inner flex flex-col justify-center items-center">
+                <span class="top-text text-white tracking-wide mb-2">IT'S WHAT WE DO</span>
+                <h2 class="text-white text-h2 w-[65%] mx-auto text-center">We’ll Make Your <span class="!text-red underline">CAR FEEL BRAND NEW</span>
+                    Visit Our Workshop Today.</h2>
+                 <div class="btn-red mt-[30px] *:flex *:justify-center *:items-center *:gap-[10px] border border-red hover:border-white hover:bg-transparent hover:text-white">
+                    <a href="#" role="link">Call Us Today
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.875 11.5L13.4297 10.0234C13.0547 9.85938 12.668 9.82422 12.2695 9.91797C11.8711 10.0117 11.543 10.2227 11.2852 10.5508L10.3008 11.7461C8.70703 10.8086 7.44141 9.55469 6.50391 7.98438L7.69922 7C8.02734 6.74219 8.23828 6.41406 8.33203 6.01562C8.42578 5.61719 8.39062 5.23047 8.22656 4.85547L6.75 1.375C6.5625 0.953125 6.26953 0.648437 5.87109 0.460938C5.49609 0.25 5.08594 0.191406 4.64062 0.285156L1.44141 1.02344C0.996094 1.14062 0.644531 1.36328 0.386719 1.69141C0.128906 2.01953 0 2.39453 0 2.81641C0.0234375 5.69922 0.726563 8.30078 2.10938 10.6211C3.49219 12.918 5.33203 14.7578 7.62891 16.1406C9.94922 17.5234 12.5508 18.2266 15.4336 18.25C15.8555 18.25 16.2305 18.1211 16.5586 17.8633C16.8867 17.6055 17.0977 17.2539 17.1914 16.8086L17.9297 13.6094C18.0234 13.1641 17.9766 12.7539 17.7891 12.3789C17.6016 11.9805 17.2969 11.6875 16.875 11.5ZM16.3125 13.2227L15.5742 16.457C15.5508 16.5039 15.5039 16.5391 15.4336 16.5625C12.8789 16.5391 10.5703 15.918 8.50781 14.6992C6.44531 13.457 4.79297 11.8047 3.55078 9.74219C2.33203 7.67969 1.71094 5.37109 1.6875 2.81641C1.6875 2.74609 1.72266 2.69922 1.79297 2.67578L5.02734 1.9375C5.02734 1.9375 5.03906 1.9375 5.0625 1.9375C5.10938 1.9375 5.15625 1.97266 5.20312 2.04297L6.67969 5.48828C6.70312 5.55859 6.69141 5.61719 6.64453 5.66406L4.92188 7.03516C4.59375 7.31641 4.51172 7.65625 4.67578 8.05469C5.28516 9.25 6.04688 10.3164 6.96094 11.2539C7.89844 12.1914 8.96484 12.9531 10.1602 13.5391C10.5352 13.7031 10.875 13.6211 11.1797 13.293L12.5859 11.6055C12.6328 11.5352 12.6914 11.5117 12.7617 11.5352L16.207 13.0117C16.2773 13.082 16.3125 13.1523 16.3125 13.2227Z" fill="white"/>
+                            </svg>                            
+                    </a>
+                 </div>   
+            </div>
+        </div>
+     </section>
+    <!-- Cta Section Ends Here -->
+    <!-- Paint-correction Section Starts Here -->
+     <section class="paint-section lg:py-[100px] md:py-[70px] py-[40px]">
+        <div class="container">
+            <div class="inner flex lg:flex-row flex-col justify-start lg:items-center items-start gap-[30px]">
+                <div class="left-img lg:w-[40%] md:w-[60%] w-full">
+                    <img src="./src/img/aqwe-scaled.jpg" alt="paint image" role="img" class="w-full object-cover">
+                </div>
+                <div class="right-text lg:w-[60%] w-full px-[30px] h-full flex justify-center">
+                    <div class="text-content space-y-[30px] w-full">
+                        <div class="heading relative before:content-[''] before:w-[50px] before:h-[4px] before:bg-red before:absolute before:bottom-[-10px] before:left-0 mb-8">
+                            <h2 class="text-h2 text-blue">Paint Correction</h2>
+                        </div>
+                      
+                        <div class="paint-card flex justify-start items-center flex-wrap gap-[30px]">
+                            <div class="card md:w-[calc(33%-20px)] sm:w-[calc(50%-20px)] w-full p-[30px] shadow-[0px_20px_60px_1px_#0000000F] flex flex-col items-center gap-[15px]">
+                               <img src="./src/img/card-icon (1).svg" alt="card-icon" role="img">
+                                <h3 class="text-h4 text-center text-blue">Starts At<br>
+                                   <span class="text-red"> $899</span> S/m Cars</h3>                                    
+                            </div>
+                            <!--  -->
+                            <div class="card md:w-[calc(33%-20px)] sm:w-[calc(50%-20px)] w-full p-[30px] shadow-[0px_20px_60px_1px_#0000000F] flex flex-col items-center gap-[15px]">
+                                <img src="./src/img/card-icon (2).svg" alt="card-icon" role="img">
+                                <h3 class="text-h4 text-center text-blue">Starts At<br>
+                                    <span class="text-red"> $1099</span> Suv/trucks
+                                </h3>                                   
+                            </div>
+                            <!--  -->
+                            <div class="card md:w-[calc(33%-20px)] sm:w-[calc(50%-20px)] w-full p-[30px] shadow-[0px_20px_60px_1px_#0000000F] flex flex-col items-center gap-[15px]">
+                                <img src="./src/img/card-icon (3).svg" alt="card-icon" role="img">
+                                <h3 class="text-h4 text-center text-blue">Starts At<br>
+                                    <span class="text-red"> $1399</span> Exotic
+                                </h3>                                 
+                            </div>
+                            <!--  -->
+                        </div>
+                        <div class="text *:relative *:pl-8 *:before:content-[''] *:before:w-6 *:before:h-6 *:before:bg-blue_arrow *:before:bg-contain *:before:bg-center *:before:bg-no-repeat *:before:absolute *:before:top-0 *:before:left-0 space-y-3 text-black-100">
+                            <p>Paintwork, glass, emblems, plastics, rubbers are properly washed and cleaned.</p>
+                            <p>Tires, wheels, and wheel arches are deep cleaning Door jambs, trunk lid area, and gas cap cleaned.</p>
+                        </div>  
+                        <div class="btn-blue hover:bg-blue">
+                            <a href="#" role="link">Learn More
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.7773 17.5938C14.6133 17.4531 14.5312 17.2656 14.5312 17.0312C14.5312 16.7969 14.6133 16.5977 14.7773 16.4336L18.1172 13.0938H3.84375C3.32812 13.0469 3.04688 12.7539 3 12.2148C3.04688 11.7227 3.32812 11.4531 3.84375 11.4062H18.1172L14.7773 8.06641C14.4492 7.66797 14.4492 7.26953 14.7773 6.87109C15.1758 6.54297 15.5742 6.54297 15.9727 6.87109L20.7539 11.6523C21.082 12.0508 21.082 12.4492 20.7539 12.8477L15.9727 17.6289C15.5742 17.957 15.1758 17.9453 14.7773 17.5938Z" fill="#ffffff"/>
+                                    </svg>
+
+                            </a>
+                        </div> 
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Paint-correction Section Ends Here -->
+      <!-- Quality-Services Section Starts Here -->
+      <section class="Quality-Services bg-blue py-[50px]">
+        <div class="container">
+            <div class="inner">
+                <div class="title text-center text-white space-y-8">
+                    <div class="heading relative before:content-[''] before:w-[50px] before:h-[4px] before:bg-red before:absolute before:bottom-[-10px] before:left-[47%]">
+                        <h2 class="text-h2 text-white text-center">Quality-Services</h2>
+                    </div>
+                    <p>We offer full-service auto repair & maintenance</p>
+                </div>
+                <div class="process-block flex gap-[30px] flex-wrap lg:mt-[50px] mt-8">
+                    <div class="block1 border border-[#F2F2F2] p-[30px] lg:w-[calc(33%-20px)] md:w-[calc(50%-20px)] w-full flex justify-start items-start gap-4">
+                        <div class="icon w-[60px] h-[60px] flex-none">
+                            <img src="./src/img/calendar.svg" alt="calender icon" role="img">
+                        </div>
+                        <div class="b-text text-white space-y-4">
+                            <h3 class="text-h4 text-white">Select Your Day</h3>
+                            <p>We wash 8am-5pm at your office, apartment, or home. Easily reschedule anytime</p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="block1 border border-[#F2F2F2] p-[30px] lg:w-[calc(33%-20px)] md:w-[calc(50%-20px)] w-full flex justify-start items-start gap-4">
+                        <div class="icon w-[60px] h-[60px] flex-none">
+                            <img src="./src/img/package.svg" alt="package icon" role="img">
+                        </div>
+                        <div class="b-text text-white space-y-4">
+                            <h3 class="text-h4 text-white">Select Your Package</h3>
+                            <p>Choose the package that aligns with your car detailing needs. All packages can be customized.</p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="block1 border border-[#F2F2F2] p-[30px] lg:w-[calc(33%-20px)] md:w-[calc(50%-20px)] w-full flex justify-start items-start gap-4">
+                        <div class="icon w-[60px] h-[60px] flex-none">
+                            <img src="./src/img/customer-service.svg" alt="customer-service icon" role="img">
+                        </div>
+                        <div class="b-text text-white space-y-4">
+                            <h3 class="text-h4 text-white">Quality Support</h3>
+                            <p>We offer quality support programs for any vehicle that allow them to always stay fully functional.</p>
+                        </div>
+                    </div>
+                    <!--  -->
+                   
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Quality-Services Section Ends Here -->
+      <!-- Testimonial Section Starts Here -->
+      <section class="Testimonials lg:py-[100px] md:py-[70px] py-[40px]">
+        <div class="container">
+            <div class="inner">
+                <div class="heading relative before:content-[''] before:w-[50px] before:h-[4px] before:bg-red before:absolute before:bottom-[-10px] before:left-[50%]">
+                    <h2 class="text-h2 text-blue text-center">Testimonials</h2>
+                </div>
+                <div class="logo-slider mt-[50px]">
+                    <div class="owl-carousel owl-theme testimonial-slider">
+                        <div class="item company-logo flex justify-center items-center p-[5px]">
+                            <div class="content shadow-[0px_20px_60px_0px_#0000000F] p-[30px] text-center space-y-4">
+                                <p>I have been using Marco´s Prestigious Auto Detail for several years now. He comes right to my home and has cleaned and detailed three of our cars. The cars always look beautiful and like new they always does an impeccable job.</p>
+                                <div class="author">
+                                    <h3 class="text-h4">Jimmy Nicolas</h3>
+                                    <p>Client</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="item company-logo flex justify-center items-center p-[5px]">
+                            <div class="content  shadow-[0px_20px_60px_0px_#0000000F] p-[30px] text-center space-y-4">
+                                <p>I have been using Marco´s Prestigious Auto Detail for several years now. He comes right to my home and has cleaned and detailed three of our cars. The cars always look beautiful and like new they always does an impeccable job.</p>
+                                <div class="author">
+                                    <h3 class="text-h4">Jimmy Nicolas</h3>
+                                    <p>Client</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="item company-logo flex justify-center items-center p-[5px]">
+                            <div class="content shadow-[0px_20px_60px_0px_#0000000F] p-[30px] text-center space-y-4">
+                                <p>I have been using Marco´s Prestigious Auto Detail for several years now. He comes right to my home and has cleaned and detailed three of our cars. The cars always look beautiful and like new they always does an impeccable job.</p>
+                                <div class="author">
+                                    <h3 class="text-h4">Jimmy Nicolas</h3>
+                                    <p>Client</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="item company-logo flex justify-center items-center p-[5px]">
+                            <div class="content  shadow-[0px_20px_60px_0px_#0000000F] p-[30px] text-center space-y-4">
+                                <p>I have been using Marco´s Prestigious Auto Detail for several years now. He comes right to my home and has cleaned and detailed three of our cars. The cars always look beautiful and like new they always does an impeccable job.</p>
+                                <div class="author">
+                                    <h3 class="text-h4">Jimmy Nicolas</h3>
+                                    <p>Client</p>
+                                </div>
+                            </div>
+                        </div>
+                       <!--  -->
+                       <div class="item company-logo flex justify-center items-center p-[5px]">
+                        <div class="content  shadow-[0px_20px_60px_0px_#0000000F] p-[30px] text-center space-y-4">
+                            <p>I have been using Marco´s Prestigious Auto Detail for several years now. He comes right to my home and has cleaned and detailed three of our cars. The cars always look beautiful and like new they always does an impeccable job.</p>
+                            <div class="author">
+                                <h3 class="text-h4">Jimmy Nicolas</h3>
+                                <p>Client</p>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Testimonial Section Ends Here -->
+      <!-- Blog Section Starts Here -->
+      <section class="Blog-Services bg-blue py-[50px]">
+        <div class="container">
+            <div class="inner">
+                    <div class="heading relative before:content-[''] before:w-[50px] before:h-[4px] before:bg-red before:absolute before:bottom-[-10px] before:left-[47%]">
+                        <h2 class="text-h2 text-white text-center">Our Blog</h2>
+                    </div>
+                   
+                <div class="process-block flex gap-[30px] flex-wrap lg:mt-[50px] mt-8">
+                    <div class="block1 lg:w-[calc(33%-20px)] md:w-[calc(50%-20px)] w-full bg-white">
+                        <div class="icon w-full h-[460px] flex-none">
+                            <img src="./src/img/blog1.png" alt="blog image" role="img" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-black-100 space-y-4 text-center py-[30px]">
+                            <h3 class="text-h4 text-blue">What is Car Detailing?</h3>
+                            <p>January 29, 2022</p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="block1 lg:w-[calc(33%-20px)] md:w-[calc(50%-20px)] w-full bg-white">
+                        <div class="icon w-full h-[460px] flex-none">
+                            <img src="./src/img/blog-22.png" alt="blog image" role="img" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-black-100 space-y-4 text-center py-[30px]">
+                            <h3 class="text-h4 text-blue">Washing Your Car</h3>
+                            <p>January 29, 2022</p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="block1 lg:w-[calc(33%-20px)] md:w-[calc(50%-20px)] w-full bg-white">
+                        <div class="icon w-full h-[460px] flex-none">
+                            <img src="./src/img/blog-333.png" alt="blog image" role="img" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-black-100 space-y-4 text-center py-[30px]">
+                            <h3 class="text-h4 text-blue">What Is Paint Correction?</h3>
+                            <p>January 29, 2022</p>
+                        </div>
+                    </div>
+                    <!--  -->
+                   
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Blog Section Ends Here -->
+    <!-- Contact Section Starts Here -->
+     <section class="contact-section flex items-center h-[763px]">
+        <div class="map lg:w-[45%] w-full h-full">
+            <img src="./src/img/map.png" alt="map" role="img" class="w-full h-full object-cover">
+        </div>
+        <div class="right-form h-full lg:w-[55%] w-full lg:py-[150px] lg:px-[100px] md:py-[100px] md:px-[80px] py-[48px] px-[48px]">
+            <div class="inner">
+                <div class="heading relative before:content-[''] before:w-[50px] before:h-[4px] before:bg-red before:absolute before:bottom-[-10px] before:left-0 mb-8">
+                    <h2 class="text-h2 text-blue">Paint Correction</h2>
+                </div>
+                <form action="#">
+                    <div class="flex mb-4">
+                        <input type="text" id="name" name="name" placeholder="Name*" required class="w-[47%] py-3 px-[18px] border-b !border-b-black-100 mr-[16px]">
+                        <input type="email" id="email" name="email" placeholder="Email Address*" required class="w-[49%] py-3 px-[18px] border-b !border-b-black-100">
+                    </div>
+                    
+                    <input type="text" id="subject" name="text" placeholder="Subject" required class="w-full py-3 px-[18px] border-b !border-b-black-100 mb-4">
+                    <textarea name="message" id="textarea" placeholder="Ask us any questions..." required class="w-full py-3 px-[18px] border-b !border-b-black-100"></textarea>
+                    <button class="btn-blue hover:bg-blue flex items-center justify-center gap-[5px] mt-[30px]">Submit
+                            <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.875 2.23047L13.4844 13.4102C13.2969 14.207 12.8633 14.418 12.1836 14.043L8.5625 11.3711L6.80469 13.0586C6.57031 13.293 6.32422 13.4102 6.06641 13.4102L6.34766 9.71875L13.0625 3.67188C13.2266 3.50781 13.2266 3.41406 13.0625 3.39062C12.9219 3.34375 12.7695 3.37891 12.6055 3.49609L4.30859 8.73438L0.722656 7.60938C0.324219 7.49219 0.136719 7.31641 0.160156 7.08203C0.183594 6.84766 0.429688 6.64844 0.898438 6.48438L14.8555 1.07031C15.207 0.953125 15.4883 1 15.6992 1.21094C15.9102 1.39844 15.9688 1.73828 15.875 2.23047Z" fill="white"/>
+                                </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+     </section>
+    <!-- Contact Section Ends Here -->
+    <!-- CTA Section Starts Here -->
+     <section class="cta py-[100px]">
+        <div class="container">
+            <div class="schedule-block max-w-[1170px] mx-auto bg-red py-[50px] px-[60px] flex flex-wrap justify-between gap-8">
+                <h2 class="text-h2 text-white">Schedule Your Appointment Today</h2>
+                <div class="btn-blue">
+                    <a href="#" role="link">Get A Quote Now</a>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- CTA Section Ends Here -->
+     <!--  -->
+    <!--===== SCRIPT =====-->
+    
+    <script src="./src/js/jquery-3.7.1.min.js"></script>
+    <script src="./src/js/script.js"></script>
+    <script src="./src/js/owl.carousel.min.js"></script>
+     <!-- sticky-header -->
+   
+     <!-- sticky-header -->
+     <script>
+        $(document).ready(function() {
+            $(window).on("scroll", function() {
+                const scrollTop = $(window).scrollTop();
+                const headerBackground = scrollTop > 50 ? "rgba(0, 0, 0, 0.9)" : "rgba(0, 0, 0, 0.37)";
+                $(".header").css("background-color", headerBackground);
+            });
+        });
+    </script>
+    <!-- mobile-menu -->
+    <script>
+     $(document).ready(function() {
+            // Open the nav with the .menu button
+            $('.menu').on('click', function() {
+                const nav = $('nav');
+                if (nav.css('left') === '-1000px') {
+                    nav.css({
+                        left: '0',
+                        transition: 'left 0.3s ease'
+                    });
+                }
+            });
+
+            // Close the nav with the .vs-menu-toggle button
+            $('.vs-menu-toggle').on('click', function() {
+                $('nav').css({
+                    left: '-1000px',
+                    transition: 'left 0.5s ease'
+                });
+            });
+        });
+    </script>
+    <script>
+        $('.hero-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            dots:true,
+            items:1
+        })
+    </script>
+    <script>
+        $('.company-slider').owlCarousel({
+            loop:true,
+            margin:60,
+            nav:false,
+            dots:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+    </script>
+       <script>
+        $('.testimonial-slider').owlCarousel({
+            loop:true,
+            margin:30,
+            nav:false,
+            dots:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:2
+                }
+            }
+        })
+    </script>
+</body>
+</html>

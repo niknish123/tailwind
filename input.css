@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    * {
+      @apply font-jost;
+    }
+    svg {
+      @apply flex-none;
+    }
+    .btn-red{
+      @apply text-white bg-red text-p py-3 px-8 w-fit text-center hover:bg-white hover:text-red transition;
+    }
+    .btn-blue{
+      @apply text-white text-p bg-blue py-3 px-8 w-fit text-center border-transparent border hover:bg-transparent hover:border-white *:flex *:items-center *:gap-3 transition;
+    }
+    nav ul li>a{
+      @apply hover:text-red transition;
+    }
+    .hero-carousel .owl-dots{
+      @apply absolute top-[50%] right-0 rotate-90 flex;
+    }
+    .hero-carousel .owl-dots .owl-dot.active span, .company-slider .owl-dots .owl-dot.active span,.testimonial-slider .owl-dots .owl-dot.active span {
+      @apply !bg-red !w-[18px] !h-[18px];
+    }
+    .hero-carousel .owl-dots .owl-dot:hover span, .company-slider .owl-dots .owl-dot:hover span {
+      @apply !bg-red;
+    }
+    .hero-carousel .owl-dots .owl-dot span {
+      @apply !bg-[#FF00004A];
+    }
+    .company-slider .owl-dots,.testimonial-slider .owl-dots {
+     @apply flex justify-center !mt-[40px];
+    }
+    .company-slider .owl-dots .owl-dot span{
+    @apply bg-[#FFFFFF4A];
+    }
+    .testimonial-slider .owl-stage-outer {
+      @apply py-8;
+  }
+  .testimonial-slider .owl-dots .owl-dot.active span{
+    @apply !bg-blue;
+  }
+  }
