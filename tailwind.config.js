@@ -49,8 +49,9 @@ module.exports = {
         link_arrow: "url('../src/img/linkarrow.svg')",
         location_icon:"url('../src/img/whitelocation.svg')",
         call_icon: "url('../src/img/call-white.svg')",
-        mail_icon:"url('../src/img/mailfooter.svg')",
-        
+        mail_icon: "url('../src/img/mailfooter.svg')",
+        // About US
+        about_bg:  "url('../src/img/Aboutus.jpg')",
       },
       fontFamily: {
         jost: ["Jost"],

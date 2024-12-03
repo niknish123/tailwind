@@ -658,7 +658,7 @@
         <div class="container">
             <div class="schedule-block max-w-[1170px] mx-auto bg-red lg:py-[50px] lg:px-[60px] py-8 px-8 flex flex-wrap justify-between gap-8 relative mb-[-180px]">
                 <h2 class="text-h2 text-white">Schedule Your Appointment Today</h2>
-                <div class="btn-blue">
+                <div class="btn-blue flex justify-center items-center">
                     <a href="#" role="link">Get A Quote Now</a>
                 </div>
             </div>
@@ -729,13 +729,17 @@
    
      <!-- sticky-header -->
      <script>
-        $(document).ready(function() {
-            $(window).on("scroll", function() {
-                const scrollTop = $(window).scrollTop();
-                const headerBackground = scrollTop > 50 ? "rgba(0, 0, 0, 0.9)" : "rgba(0, 0, 0, 0.37)";
-                $(".header").css("background-color", headerBackground);
+          $(document).ready(function () {
+                $(".header").css("background-color", "rgba(0, 0, 0, 0.37)");
+
+                $(window).on("scroll", function () {
+                    const scrollTop = $(window).scrollTop();
+
+                    const headerBackground = scrollTop > 50 ? "rgba(0, 0, 0, 0.9)" : "rgba(0, 0, 0, 0.37)";
+                    $(".header").css("background-color", headerBackground);
+                });
             });
-        });
+
     </script>
     <!-- mobile-menu -->
     <script>

@@ -836,6 +836,14 @@ nav ul li>a:hover {
   z-index: 111;
 }
 
+.z-\[1\] {
+  z-index: 1;
+}
+
+.z-\[2\] {
+  z-index: 2;
+}
+
 .float-start {
   float: inline-start;
 }
@@ -911,6 +919,10 @@ nav ul li>a:hover {
 
 .mr-\[16px\] {
   margin-right: 16px;
+}
+
+.ms-1 {
+  margin-inline-start: 0.25rem;
 }
 
 .mt-2 {
@@ -1052,6 +1064,10 @@ nav ul li>a:hover {
   height: 460px;
 }
 
+.h-\[500px\] {
+  height: 500px;
+}
+
 .h-\[60px\] {
   height: 60px;
 }
@@ -1100,12 +1116,17 @@ nav ul li>a:hover {
   width: weird-and-invalid;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .w-full {
   width: 100%;
 }
 
-.w-\[calc\(50\%-20px\)\] {
-  width: calc(50% - 20px);
+.w-\[60\%\] {
+  width: 60%;
 }
 
 .max-w-\[1170px\] {
@@ -1674,6 +1695,12 @@ nav ul li>a:hover {
   gap: 5px;
 }
 
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -2174,6 +2201,14 @@ nav ul li>a:hover {
   border-bottom-color: rgb(130 130 130 / var(--tw-border-opacity, 1)) !important;
 }
 
+.bg-\[\#21325E33\] {
+  background-color: #21325E33;
+}
+
+.bg-\[\#FFFFFF26\] {
+  background-color: #FFFFFF26;
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
@@ -2192,6 +2227,10 @@ nav ul li>a:hover {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-about_bg {
+  background-image: url('../src/img/Aboutus.jpg');
 }
 
 .bg-cta_bg {
@@ -2336,8 +2375,8 @@ nav ul li>a:hover {
   padding: 1.5rem;
 }
 
-.p-\[100px\] {
-  padding: 100px;
+.p-8 {
+  padding: 2rem;
 }
 
 .p-\[30px\] {
@@ -2348,8 +2387,8 @@ nav ul li>a:hover {
   padding: 5px;
 }
 
-.p-8 {
-  padding: 2rem;
+.p-\[\] {
+  padding: ;
 }
 
 .px-1 {
@@ -2449,6 +2488,10 @@ nav ul li>a:hover {
 
 .pt-\[120px\] {
   padding-top: 120px;
+}
+
+.pt-\[200px\] {
+  padding-top: 200px;
 }
 
 .pt-\[380px\] {
@@ -2551,6 +2594,10 @@ nav ul li>a:hover {
   font-weight: 700;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -2645,6 +2692,11 @@ nav ul li>a:hover {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity, 1));
 }
 
 .text-red {
@@ -3101,6 +3153,10 @@ nav ul li>a:hover {
   display: flex;
 }
 
+.\*\:w-\[60\%\] > * {
+  width: 60%;
+}
+
 .\*\:items-center > * {
   align-items: center;
 }
@@ -3317,6 +3373,11 @@ nav ul li>a:hover {
   font-weight: 700;
 }
 
+.hover\:text-blue-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity, 1));
+}
+
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
@@ -3377,6 +3438,10 @@ nav ul li>a:hover {
 }
 
 @media (min-width: 768px) {
+  .md\:ms-2 {
+    margin-inline-start: 0.5rem;
+  }
+
   .md\:w-\[60\%\] {
     width: 60%;
   }
@@ -3397,20 +3462,10 @@ nav ul li>a:hover {
     justify-content: space-between;
   }
 
-  .md\:p-\[\] {
-    padding: ;
-  }
-
-  .md\:p-\[4\] {
-    padding: 4;
-  }
-
-  .md\:p-\[40px\] {
-    padding: 40px;
-  }
-
-  .md\:p-\[4px\] {
-    padding: 4px;
+  .md\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:p-\[50px\] {
@@ -3510,6 +3565,10 @@ nav ul li>a:hover {
     width: 200px;
   }
 
+  .lg\:w-\[37\%\] {
+    width: 37%;
+  }
+
   .lg\:w-\[40\%\] {
     width: 40%;
   }
@@ -3528,6 +3587,10 @@ nav ul li>a:hover {
 
   .lg\:w-\[60\%\] {
     width: 60%;
+  }
+
+  .lg\:w-\[63\%\] {
+    width: 63%;
   }
 
   .lg\:w-\[calc\(25\%-23px\)\] {
@@ -3673,6 +3736,10 @@ nav ul li>a:hover {
   .\*\:2xl\:text-\[18px\] > * {
     font-size: 18px;
   }
+}
+
+.rtl\:space-x-reverse:where([dir="rtl"], [dir="rtl"] *) > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
 }
 
 @media (prefers-color-scheme: dark) {
