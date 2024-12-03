@@ -18,7 +18,7 @@
       @apply hover:text-red transition;
     }
     .hero-carousel .owl-dots{
-      @apply absolute top-[50%] right-0 rotate-90 flex;
+      @apply absolute top-[38%] right-0 rotate-90 flex;
     }
     .hero-carousel .owl-dots .owl-dot.active span, .company-slider .owl-dots .owl-dot.active span,.testimonial-slider .owl-dots .owl-dot.active span {
       @apply !bg-red !w-[18px] !h-[18px];

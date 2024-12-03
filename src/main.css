@@ -642,7 +642,7 @@ nav ul li>a:hover {
 
 .hero-carousel .owl-dots {
   position: absolute;
-  top: 50%;
+  top: 38%;
   right: 0px;
   display: flex;
   --tw-rotate: 90deg;
@@ -1064,12 +1064,12 @@ nav ul li>a:hover {
   height: 460px;
 }
 
-.h-\[500px\] {
-  height: 500px;
-}
-
 .h-\[60px\] {
   height: 60px;
+}
+
+.h-\[636px\] {
+  height: 636px;
 }
 
 .h-\[89px\] {
@@ -2590,6 +2590,10 @@ nav ul li>a:hover {
   font-weight: 500;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -3107,6 +3111,10 @@ nav ul li>a:hover {
   forced-color-adjust: none;
 }
 
+.\[pqF\:\FFFD\678\FFFD c\@\FFFD\FFFD\15\FFFD\] {
+  pq-f: �ٸ�c@���;
+}
+
 .\[vite\:css\] {
   vite: css;
 }
@@ -3375,14 +3383,6 @@ nav ul li>a:hover {
   z-index: 1;
 }
 
-.hover\:\*\:fill-red > *:hover {
-  fill: #FF0000;
-}
-
-.\*\:hover\:fill-red:hover > * {
-  fill: #FF0000;
-}
-
 .hover\:\*\:opacity-\[1\] > *:hover {
   opacity: 1;
 }
@@ -3611,10 +3611,6 @@ nav ul li>a:hover {
 
   .lg\:items-center {
     align-items: center;
-  }
-
-  .lg\:justify-normal {
-    justify-content: normal;
   }
 
   .lg\:gap-\[7px\] {
