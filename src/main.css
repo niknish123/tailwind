@@ -1125,10 +1125,6 @@ nav ul li>a:hover {
   width: 100%;
 }
 
-.w-\[60\%\] {
-  width: 60%;
-}
-
 .max-w-\[1170px\] {
   max-width: 1170px;
 }
@@ -2387,10 +2383,6 @@ nav ul li>a:hover {
   padding: 5px;
 }
 
-.p-\[\] {
-  padding: ;
-}
-
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -3153,10 +3145,6 @@ nav ul li>a:hover {
   display: flex;
 }
 
-.\*\:w-\[60\%\] > * {
-  width: 60%;
-}
-
 .\*\:items-center > * {
   align-items: center;
 }
@@ -3387,6 +3375,14 @@ nav ul li>a:hover {
   z-index: 1;
 }
 
+.hover\:\*\:fill-red > *:hover {
+  fill: #FF0000;
+}
+
+.\*\:hover\:fill-red:hover > * {
+  fill: #FF0000;
+}
+
 .hover\:\*\:opacity-\[1\] > *:hover {
   opacity: 1;
 }
@@ -3440,6 +3436,10 @@ nav ul li>a:hover {
 @media (min-width: 768px) {
   .md\:ms-2 {
     margin-inline-start: 0.5rem;
+  }
+
+  .md\:h-\[500px\] {
+    height: 500px;
   }
 
   .md\:w-\[60\%\] {
